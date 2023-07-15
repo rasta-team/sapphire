@@ -1,6 +1,6 @@
 #!/bin/bash
 # // wget https://github.com/${GitUser}/
-GitUser="NevermoreSSH"
+GitUser="rasta-team"
 
 # // MY IPVPS
 export MYIP=$(curl -sS ipv4.icanhazip.com)
@@ -66,7 +66,7 @@ systemctl stop nginx
 
 # // INSTALL CERTIFICATES
 mkdir /root/.acme.sh
-curl https://raw.githubusercontent.com/NevermoreSSH/sapphire/main/acme.sh -o /root/.acme.sh/acme.sh
+curl https://raw.githubusercontent.com/rasta-team/sapphire/main/acme.sh -o /root/.acme.sh/acme.sh
 chmod +x /root/.acme.sh/acme.sh
 /root/.acme.sh/acme.sh --upgrade --auto-upgrade
 /root/.acme.sh/acme.sh --set-default-ca --server letsencrypt
@@ -1201,7 +1201,8 @@ systemctl restart xray@trojannone
 # download script
 cd /usr/bin
 wget -O port-xray "https://raw.githubusercontent.com/${GitUser}/sapphire/main/change-port/port-xray.sh"
-wget -O certv2ray "https://raw.githubusercontent.com/${GitUser}/sapphire/main/cert.sh"
+#wget -O certv2ray "https://raw.githubusercontent.com/${GitUser}/sapphire/main/cert.sh"
+wget -O certv2ray "https://raw.githubusercontent.com/rasta-team/sapphire/main/cert.sh"
 wget -O trojaan "https://raw.githubusercontent.com/${GitUser}/sapphire/main/menu/trojaan.sh"
 wget -O xraay "https://raw.githubusercontent.com/${GitUser}/sapphire/main/menu/xraay.sh"
 chmod +x port-xray

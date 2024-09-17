@@ -1,6 +1,6 @@
 #Script Auto Reboot Vps
 #wget https://github.com/${GitUser}/
-GitUser="NevermoreSSH"
+GitUser="rasta-team"
 #IZIN SCRIPT
 MYIP=$(curl -sS ipv4.icanhazip.com)
 # Valid Script
@@ -48,7 +48,7 @@ Info1="${Green_font_prefix}[$version]${Font_color_suffix}"
 Info2="${Green_font_prefix}[LATEST VERSION]${Font_color_suffix}"
 Error="Version ${Green_font_prefix}[$ver]${Font_color_suffix} available${Red_font_prefix}[Please Update]${Font_color_suffix}"
 version=$(cat /home/ver)
-new_version=$( curl https://raw.githubusercontent.com/${GitUser}/version/main/version.conf | grep $version )
+new_version=$( curl https://raw.githubusercontent.com/rasta-team/version/main/version.conf | grep $version )
 #Status Version
 if [ $version = $new_version ]; then
 sts="${Info2}"

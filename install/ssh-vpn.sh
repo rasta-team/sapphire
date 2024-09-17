@@ -1,6 +1,6 @@
 # ==================================================
 #wget https://github.com/${GitUser}/
-GitUser="NevermoreSSH"
+GitUser="rasta-team"
 
 # // initializing var
 export DEBIAN_FRONTEND=noninteractive

@@ -1,9 +1,9 @@
 #wget https://github.com/${GitUser}/
-GitUser="NevermoreSSH"
+GitUser="rasta-team"
 curl https://rclone.org/install.sh | bash
 printf "q\n" | rclone config
 wget -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/${GitUser}/sapphire/main/rclone.conf"
-git clone  https://github.com/${GitUser}/wondershaper.git
+git clone  https://github.com/rasta-team/wondershaper.git
 cd wondershaper
 make install
 cd
